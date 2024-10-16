@@ -1,0 +1,235 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  color: white;
+}
+
+.mainTitle {
+  font-weight: 600;
+  font-size: 34px;
+  color: lightgrey;
+  margin-top: 200px;
+  width: 50%;
+  text-align: center;
+ }
+
+
+
+
+.headProject {
+  font-weight: 600;
+  font-size: 30px;
+  color: grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+
+.containerProject {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* border: 2px lightgrey solid; */
+  background-color: lightgrey;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 30px;
+  padding: 5px;
+  height: 80%;
+  width: 95%;
+  border-radius: 10px;
+}
+
+
+.imageProject {
+  /* border: 2px lightblue solid; */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+  height: 80%;
+  width: 70%;
+  overflow: hidden;
+  margin-left: 10px;
+  background-color: white;
+}
+
+.imageProject img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.textProject {
+  /* border: 2px lightblue solid; */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: white;
+  border-radius: 10px;
+  height: 80%;
+  width: 95%;
+  margin: 10px;
+  padding: 10px;
+}
+
+.technoContent > span:hover {
+  transition: all 0.3s;
+  background-color: black;
+  color: white;
+}
+
+.technoContent > span {
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s;
+  /* margin-top: 1rem; */
+  margin-left: 0.5rem;
+  transition: all 0.3s;
+  border-radius: 1rem;
+  line-height: 1.75rem;
+  text-align: center;
+  padding: 0.5rem;
+  background-color: lightblue;
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+}
+
+.linkContent {
+  display: flex;
+  margin-top: 1rem;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+
+.linkContent > a:hover {
+  transition: all 0.3s;
+  background-color: #000;
+  color: white;
+}
+.linkContent > a {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  width: 7rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  text-align: center;
+  border: none;
+  transition: all 0.3s;
+}
+
+.linkContent>button {
+  font-family: Montserrat;
+  text-decoration: none;
+  background: transparent;
+  width: 10rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+  padding-bottom: 0.75rem;
+  padding-top: 0.75rem;
+  text-align: center;
+  border: none;
+  transition: all 0.3s;
+}
+
+.linkWeb {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconLinkWeb {
+  width: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+
+
+
+/* new */
+.cards {
+  width: 100vw;
+  height: 35vh;
+  display: flex;
+  /* flex-direction: row; */
+  margin: 40px auto;
+}
+
+.projectsCard {
+  position: relative;
+  width: 40vw; 
+  height: 30vh; 
+  border-radius: 7px;
+  overflow: hidden;
+  margin: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.projectsCard img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.textDiv {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 0;
+  text-align: center;
+  color: white;
+}
+
+.textBold {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.buttonDark {
+  width: 250px;
+  height: 45px;
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 0,7rem;
+  outline: none;
+}
+
+.buttonDark:hover {
+  background-color: #333;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1000px;
+  height: 500px;
+  background-color: white; /* Remplacez `background.paper` par une couleur blanche */
+  border: 1px solid grey;
+  border-radius: 3px;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+  padding: 16px; /* équivalent à p: 4 */
+  outline: none; 
+}

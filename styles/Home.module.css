@@ -1,22 +1,140 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  min-height: 100vh;
-  padding: 4rem 0;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  background-image: url('/background.png');
+  background-size: cover;
+  
 }
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.stickySection {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  width: 100vw;
+  margin: 30px;
+  padding-left: 20px;
+  /* border: 1px green solid; */
+  /* position: -webkit-sticky;
+  position: fixed; */
+  position:sticky;
+  top: 0;  
+  z-index: 1000;
+}
+
 
 .title {
-  line-height: 1.15;
-  font-size: 4rem;
+  letter-spacing: 15px;
+  font-size: 24px;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+.textBold {
+  font-weight: 600;
+  font-size: 36px;
 }
 
-.title a:hover, .title a:focus, .title a:active {
-  text-decoration: underline;
+
+
+.icon:hover {
+  opacity: 0.3;
 }
+
+
+
+.buttonLight {
+  width: 150px;
+  height: 45px;
+  margin: 20px;
+  border-radius: 6px;
+  border: none;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: white;
+  cursor: pointer;
+  transition-duration: 1s;
+}
+
+.buttonLight:hover {
+  background-color: black;
+  color: white;
+  border: 2px white solid;
+}
+
+.buttonDark {
+  width: 150px;
+  height: 45px;
+  margin: 20px;
+  border-radius: 6px;
+  border: 1px white solid;
+  background-color: transparent;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition-duration: 1s;
+}
+
+.buttonDark:hover {
+  background-color: white;
+  color: black;
+  border: 2px white solid;
+  opacity: 0.3;
+}
+
+.divColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 60vh;
+  width: 100vw;
+  background-color: lightgoldenrodyellow;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  width: 100vw;
+  background-color: black;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.link {
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.link:hover {
+  opacity: 0.3;
+}
+
+.photo {
+  margin-top: 300px;
+  margin-right: 25%;
+  transform: rotate(-20deg);
+}
+
