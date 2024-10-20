@@ -52,23 +52,33 @@ function Contact() {
     <div className={styles.main}>
 
       <div className={styles.mainTitle}>
-             <span>Contact Me</span>
+             <span>Contactez moi</span>
        </div>
      
 <div className={styles.container}>
       <div className={styles.contactForm}>
         <form onSubmit={handleSubmit} className={styles.contactForm}>
           <div className={styles.formGroup}>
+            <label htmlFor="name" className={styles.label}>Prénom</label>
+            <input
+              type="text"
+              id="firstName"
+              name="name"
+              value={formData.firstName}
+              onChange={handleChange}
+              className={`${styles.input} ${errors.firstName ? styles.errorInput : ''}`}
+            />
+            {errors.firstName && <span className={styles.errorMessage}>{errors.firstName}</span>}
             <label htmlFor="name" className={styles.label}>Nom</label>
             <input
               type="text"
-              id="name"
+              id="lastName"
               name="name"
-              value={formData.name}
+              value={formData.lastName}
               onChange={handleChange}
-              className={`${styles.input} ${errors.name ? styles.errorInput : ''}`}
+              className={`${styles.input} ${errors.lastName ? styles.errorInput : ''}`}
             />
-            {errors.name && <span className={styles.errorMessage}>{errors.name}</span>}
+            {errors.lastName && <span className={styles.errorMessage}>{errors.lastName}</span>}
           </div>
 
           <div className={styles.formGroup}>

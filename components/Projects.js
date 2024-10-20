@@ -109,7 +109,7 @@ const handleClick = (project) => {
 
   const projectsCards = projects.map((project, i) => {
     return (
-      <Card className={styles.projectsCard} >
+      <Card key={project.id} className={styles.projectsCard} >
       <Image
         alt="Project image"
         className={styles.image} 
@@ -134,7 +134,7 @@ const handleClick = (project) => {
   return (
     <div className={styles.main}>
    
-        <div className={styles.mainTitle}> Some of my last projects</div>
+        <div className={styles.mainTitle}> my last projects</div>
 
         <div className={styles.cards}>
           {projectsCards}
@@ -167,7 +167,7 @@ const handleClick = (project) => {
             <h4>Technologies utilisées :</h4>
             <div className={styles.technoContent}>
                 {projects[id-1].techno.map((techno) => (
-                  <span>{techno}</span>
+                  <span key={techno}>{techno}</span>
                   ))}   
             </div>
 
