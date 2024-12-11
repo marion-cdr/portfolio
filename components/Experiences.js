@@ -1,12 +1,39 @@
+import { useState } from 'react';
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Modal from "@mui/material/Modal";
+import Image from 'next/image';
+import Typography from "@mui/material/Typography";
+
 import styles from '../styles/Experiences.module.css';
+
 
 function Experiences() {
   
+    const [isOpen, setIsOpen] = useState(false);
+
+    const handleClose = () => {
+      setIsOpen(false);
+    };
+  
+    const handleOpen = () => {
+      setIsOpen(true);
+    };
 
 
-
-
-
+    const style = {
+        position: "absolute",
+        top: "50%",
+        left: "50%",
+        transform: "translate(-50%, -50%)",
+        width: 500,
+        bgcolor: "background.paper",
+        border: "1px solid grey",
+        borderRadius: 3,
+        boxShadow: 24,
+        p: 4,
+        outline: "none",
+      };
 
 
   return (
@@ -21,7 +48,34 @@ function Experiences() {
                 <h3 className={styles.h3}>Bootcamp Développement web & mobile</h3>
                 <div>Janvier 2024 - mars 2024 <br/>
                 Titre RNCP de niveau 6 <br/>
+                <Button variant="contained" color="primary" onClick={handleOpen}>
+                    Voir le diplôme
+                    </Button>
+                </div> <br/>
+
+            <Modal
+                open={isOpen}
+                onClose={handleClose}
+                aria-labelledby="diploma-modal-title"
+                aria-describedby="diploma-modal-description"
+            >
+                <Box sx={style}>
+                <div className={styles.modalHeader}>
+                    <Typography id="diploma-modal-title" variant="h6" component="h2">
+                    Diplôme
+                    </Typography>
+                    <Button onClick={handleClose} className={styles.closeButton}>✖</Button>
                 </div>
+                <Image
+                    src="/diplome_lacapsule.pdf"
+                    alt="Diplôme"
+                    width={400}
+                    height={500}
+                    className={styles.diplomaImage}
+                />
+                </Box>
+            </Modal>
+
             </div>
              <div className={styles.content2}>
                 <div>

@@ -4253,6 +4253,11 @@ electron-to-chromium@^1.4.668:
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.722.tgz#99ae3484c5fc0f387d39ad98d77e1f259b9f4074"
   integrity sha512-5nLE0TWFFpZ80Crhtp4pIp8LXCztjYX41yUcV6b+bKR2PqzjskTMOOlBi1VjBHlvHwS+4gar7kNKOrsbsewEZQ==
 
+emailjs-com@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/emailjs-com/-/emailjs-com-3.2.0.tgz#a53cb22f1bc433c701c84c53d8b56eefd5ce7111"
+  integrity sha512-Prbz3E1usiAwGjMNYRv6EsJ5c373cX7/AGnZQwOfrpNJrygQJ15+E9OOq4pU8yC977Z5xMetRfc3WmDX6RcjAA==
+
 emittery@^0.10.2:
   version "0.10.2"
   resolved "https://registry.yarnpkg.com/emittery/-/emittery-0.10.2.tgz#902eec8aedb8c41938c46e9385e9db7e03182933"
@@ -6060,6 +6065,11 @@ react-dom@18.1.0:
   dependencies:
     loose-envify "^1.1.0"
     scheduler "^0.22.0"
+
+react-hook-form@^7.54.0:
+  version "7.54.0"
+  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.54.0.tgz#46bd9142d65fd16ac064a2bbf4dc0333e2d6840d"
+  integrity sha512-PS05+UQy/IdSbJNojBypxAo9wllhHgGmyr8/dyGQcPoiMf3e7Dfb9PWYVRco55bLbxH9S+1yDDJeTdlYCSxO3A==
 
 react-is@^16.13.1, react-is@^16.3.2, react-is@^16.7.0:
   version "16.13.1"
