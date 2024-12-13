@@ -134,7 +134,7 @@ const handleClick = (project) => {
   return (
     <div className={styles.main}>
    
-        <div className={styles.mainTitle}> my last projects</div>
+        <div className={styles.mainTitle}> My last projects</div>
 
         <div className={styles.cards}>
           {projectsCards}
