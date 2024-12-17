@@ -2,6 +2,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: avenir;
+  background-color: rgba(245, 222, 194, 0.284);
 }
 
 * {

@@ -25,7 +25,7 @@ function Projects() {
       id: 1,
       name: 'My Moviz',
       description: 'MyMoviz est une application permettant d’afficher les derniers films sortis avec la possibilité d’ajouter un film à ses favoris, gérer un compteur de vues et évaluer chacun des films présentés.',
-      image: '/myMoviz.png',
+      image: '/myMoviz2.png',
       techno: ["React", "Next js", "Express", "NodeJs", "API"],
       link: [
         "https://github.com/marion-cdr/myMoviz-frontend",
@@ -37,7 +37,7 @@ function Projects() {
       id: 2,
       name: 'Morning News',
       description: "Il s'agit d'une application web qui vous permet d’afficher les news du journal Tech Crunch, de sauvegarder vos articles préférés et de les retrouver en vous connectant à votre compte.",
-      image: '/morningNews.png',
+      image: '/morningNews2.png',
       techno: ["React", "Next js", "MongoDb", "Express", "NodeJs", "API"],
       link: [
         "https://github.com/marion-cdr/morningNews-frontend",
@@ -109,14 +109,7 @@ const handleClick = (project) => {
 
   const projectsCards = projects.map((project, i) => {
     return (
-      <Card key={project.id} className={styles.projectsCard} >
-      <Image
-        alt="Project image"
-        className={styles.image} 
-        height={200}
-        src={project.image}
-        width={200}
-      />
+      <Card key={project.id} className={styles.projectsCard} style={{ backgroundImage: `url(${project.image})` }}>
       <CardFooter className={styles.textDiv} >
         <p className={styles.textBold}>{project.name}</p>
         <Button className={styles.buttonDark} onClick={() => handleClick(project)}>
@@ -134,7 +127,7 @@ const handleClick = (project) => {
   return (
     <div className={styles.main}>
    
-        <div className={styles.mainTitle}> My last projects</div>
+        <div className={styles.mainTitle}> Some of my latest work</div>
 
         <div className={styles.cards}>
           {projectsCards}
@@ -157,12 +150,12 @@ const handleClick = (project) => {
         </div> 
 
         <div className={styles.containerProject}>
-          <div className={styles.imageProject}>
-          < Image src={projects[id-1].image} alt="Avatar" width={400} height={300}/>
+          <div className={styles.imageProject}  style={{ backgroundImage: `url(${projects[id - 1].image})` }}>
+          {/* < Image src={projects[id-1].image} alt="Avatar" width={400} height={300}/> */}
           </div>
 
           <div className={styles.textProject}>
-            {projects[id-1].description}
+            <p>{projects[id-1].description}</p>
 
             <h4>Technologies utilisées :</h4>
             <div className={styles.technoContent}>
@@ -178,10 +171,12 @@ const handleClick = (project) => {
                   (<a href={projects[0].link[0]} target="_blank">Lien vers la page</a>) :
                   projects[id-1].link.length === 2 ? (
                     <>
-                    <a href={projects[id-1].link[0]} target="_blank">Voir sur github</a>
-                    <a href={projects[id-1].link[1]} target="_blank" className={styles.linkWeb}>
-                      <FontAwesomeIcon className={styles.iconLinkWeb} icon={faGlobe}></FontAwesomeIcon>
-                      Voir le site</a>
+                    <a href={projects[id-1].link[0]} target="_blank" className={styles.linkWeb}>
+                    <FontAwesomeIcon className={styles.iconLinkWeb} icon={faCodeBranch}></FontAwesomeIcon>
+                      FrontEnd</a>
+                      <a href={projects[id-1].link[1]} target="_blank" className={styles.linkWeb}>
+                    <FontAwesomeIcon className={styles.iconLinkWeb} icon={faCodeBranch}></FontAwesomeIcon>
+                      BackEnd</a>
                   </>
                   ) : (
                     <>

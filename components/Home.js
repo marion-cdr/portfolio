@@ -93,13 +93,16 @@ function Home() {
             </div>
           </div>
        
-
+        
+        <div id="about"> <About /> </div>
         <div id="projets"> <Projects /> </div>
         <div id="experiences"> <Experiences /> </div>
-        <div id="about"> <About /> </div>
         <div id="contact"> <Contact /> </div>
         
       </main>
+
+    
+
     </div>
   );
 }
